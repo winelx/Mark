@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recomm_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+    <include layout="@layout/title_white" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.administrator.a3dmark.util.MyListview
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:divider="@color/bg_white"
+        android:dividerHeight="10dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

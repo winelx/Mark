@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@mipmap/toolbarground">
+
+
+    <ImageView
+        android:id="@+id/image_title_white_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-40dp"
+        android:padding="12dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_title_white"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="限时秒杀"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_title_white_vice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_collection_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏店铺"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/text_size_manager" />
+
+        <TextView
+            android:id="@+id/tv_title_num"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:text="店铺号：123"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_collection" />
+    </LinearLayout>
+
+</RelativeLayout>

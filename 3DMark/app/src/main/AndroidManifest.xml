@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.a3dmark">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".Activity.IndexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.example.administrator.a3dmark.util.UpdateService"
+            android:enabled="true"></service>
+        <!--主界面-->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".Activity.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <!-- 重置密码 -->
+        <activity
+            android:name=".Activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 限时抢购 设置configChanges锁屏后不走onCreate（） -->
+        <activity
+            android:name=".Activity.SeckillActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 今日推荐 -->
+        <activity
+            android:name=".Activity.RecommActivity"
+            android:screenOrientation="portrait" />
+        <!-- 人气商品 -->
+        <activity
+            android:name=".Activity.HotcomActivity"
+            android:screenOrientation="portrait" />
+        <!-- 农副产品 -->
+        <activity
+            android:name=".Activity.MobileDigitalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 美妆护肤 -->
+        <activity
+            android:name=".Activity.BeautyskinCareActivity"
+            android:screenOrientation="portrait" />
+        <!-- 品牌生活 未上 -->
+        <!--<activity
+            android:name=".Activity.BrandLifeActivity"
+            android:screenOrientation="portrait" />-->
+        <!-- 输入密码 -->
+        <activity
+            android:name=".Activity.CodePasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 完善信息 -->
+        <activity
+            android:name=".Activity.Perfect_information"
+            android:screenOrientation="portrait" />
+        <!-- //商品详情 -->
+        <activity
+            android:name="com.example.administrator.a3dmark.detail_shop.Boutique_Detail"
+            android:screenOrientation="portrait" />
+        <!-- //商品详情/商品推荐 -->
+        <activity
+            android:name=".Activity.Recommended_Shop_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PopupWindowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <!-- //个人信息 -->
+        <activity
+            android:name=".fragment.PersonalInformation"
+            android:screenOrientation="portrait" />
+
+        <!-- //收货地址 -->
+        <activity
+            android:name=".child_pakage.Person_Addr"
+            android:screenOrientation="portrait" />
+        <!-- //修改地址 -->
+        <activity
+            android:name=".child_pakage.AddNewAddr"
+            android:screenOrientation="portrait" />
+        <!-- 人物管理 -->
+        <activity
+            android:name=".child_pakage.PersonManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name=".child_pakage.SetupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 昵称 -->
+        <activity
+            android:name=".child_pakage.NikeNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收藏 -->
+        <activity
+            android:name=".child_pakage.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".child_pakage.Modify_password"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".child_pakage.User_agreement"
+            android:screenOrientation="portrait" />
+        <!-- 个性签名 -->
+        <activity
+            android:name=".child_pakage.PersonSignature"
+            android:screenOrientation="portrait" />
+        <!-- 试衣记录 -->
+        <activity
+            android:name=".child_pakage.RecodeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册 -->
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child_pakage.EditAddr"
+            android:screenOrientation="portrait" />
+        <!-- 客服 -->
+        <activity
+            android:name=".detail_shop.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 店铺 -->
+        <activity
+            android:name=".detail_shop.Shop_Activity"
+            android:screenOrientation="portrait" />
+        <!--消息列表-->
+        <activity
+            android:name=".child_pakage.MyMexssageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的订单 -->
+        <activity
+            android:name=".Activity.MyOrder"
+            android:screenOrientation="portrait" />
+
+        <!-- 多个订单 -->
+        <activity
+            android:name=".Activity.LocalizationActivity$OrdersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!--搜索-->
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!--全部评价-->
+        <activity
+            android:name=".detail_shop.Evaluation_Activity"
+            android:screenOrientation="portrait" />
+        <!--确认订单-->
+        <activity
+            android:name=".detail_shop.Ensure_Order"
+            android:screenOrientation="portrait" />
+        <!-- 确认多个订单 -->
+        <activity
+            android:name=".Activity.OrdersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!--提交评价-->
+        <activity
+            android:name=".Activity.Comment_submit"
+            android:screenOrientation="portrait" />
+        <!--订单详情-->
+        <activity
+            android:name=".Activity.OrderDetail"
+            android:screenOrientation="portrait" />
+        <!--修改密码-->
+        <activity
+            android:name=".child_pakage.Ensure_Modify"
+            android:screenOrientation="portrait" />
+        <!--修改密碼成功-->
+        <activity
+            android:name=".child_pakage.Submit_Modify"
+            android:screenOrientation="portrait" />
+        <!--用户协议-->
+        <activity
+            android:name=".child_pakage.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <!--物流信息-->
+        <activity
+            android:name=".child_pakage.Logistic_message"
+            android:screenOrientation="portrait" />
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activity.Add_Person"
+            android:screenOrientation="portrait" />
+
+        <!-- easemob
+          设置环信应用的appkey
+         <meta-data
+             android:name="EASEMOB_APPKEY"
+             android:value="1173170502115583#3dmark" />
+          声明sdk所需的service
+         <service
+             android:name="com.hyphenate.chat.EMChatService"
+             android:exported="true"
+             tools:ignore="ExportedService" />
+         <service
+             android:name="com.hyphenate.chat.EMJobService"
+             android:exported="true"
+             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+          声明sdk所需的receiver
+         <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+             <intent-filter>
+                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                 <data android:scheme="package" />
+             </intent-filter>
+              可选filter
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                 <action android:name="android.intent.action.USER_PRESENT" />
+             </intent-filter>
+         </receiver>
+         easemob-->
+        <!--消息列表-->
+        <activity
+            android:name=".easemob.ui.ConversationActivity"
+            android:screenOrientation="portrait" />
+        <!--消息-->
+        <activity
+            android:name=".easemob.ui.ChatActivity"
+            android:screenOrientation="portrait" />
+        <!--easemob-->
+
+
+        <!--Alipay-->
+        <activity
+            android:name=".alipay.PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name=".alipay.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:theme="@style/PhoAppTheme.AppTheme"
+            android:name="com.awen.photo.photopick.ui.ClipPictureActivity" />
+        <activity
+            android:theme="@style/PhoAppTheme.AppTheme"
+            android:name="com.awen.photo.photopick.ui.PhotoPagerActivity" />
+        <activity
+            android:theme="@style/PhoAppTheme.AppTheme"
+            android:name="com.awen.photo.photopick.ui.PhotoPickActivity" />
+        <activity
+            android:theme="@style/PhoAppTheme.AppTheme"
+            android:name="com.awen.photo.photopick.ui.PhotoPreviewActivity" />
+
+    </application>
+
+</manifest>

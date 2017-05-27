@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_yout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_text_ntcp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/image_title_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/blank_message" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_yout"
+        android:layout_above="@+id/btn_group"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_fruit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_md_radio_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_specialty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_md_radio_selector2" />
+
+        <ImageButton
+            android:id="@+id/btn_wine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_md_radio_selector3" />
+
+        <ImageButton
+            android:id="@+id/btn_tea_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_md_radio_selector4" />
+
+        <ImageButton
+            android:id="@+id/btn_snacks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_md_radio_selector5" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/btn_group"
+        android:background="#66000000"/>
+
+</RelativeLayout>

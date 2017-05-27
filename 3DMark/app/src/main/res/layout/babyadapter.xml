@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="113dp"
+    android:background="@color/White"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/image_collection_shop_head"
+        android:layout_width="80dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image_goods" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_collection_shop_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:padding="5dp"
+                android:text="描述年卡巴萨韩国的俺都是八点半撒谎啥事大好多撒后端打能打好的那大SAV打电话娃娃机安检大奖电视剧叫大姐"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_collection" />
+
+            <TextView
+                android:id="@+id/tv_collection_shop_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="删除"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_collection_shop_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="￥1234"
+                android:textColor="@color/Red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_collection_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Pink"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="@dimen/txt_10"
+                android:paddingTop="2dp"
+                android:text="立即购买"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <!--<TextView
+                android:id="@+id/tv_collection_shop_try"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/Pink"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="2dp"
+                android:text="马上试穿"
+                android:textColor="@color/White"
+                android:textSize="12sp" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

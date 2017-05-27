@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_detail" />
+
+    <ScrollView
+        android:id="@+id/scollview_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_logistics"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/White"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_Logistics_details_goods"
+                    android:layout_width="95dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_image_goods" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物流状态："
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_manager" />
+
+                        <TextView
+                            android:id="@+id/tv_Logistics_details_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#089a5e"
+                            android:textSize="@dimen/text_size_manager" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="承运公司："
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/text_size_manager" />
+
+                        <TextView
+                            android:id="@+id/tv_Logistics_details_express"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/text_size_manager" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运单编号："
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/text_size_manager" />
+
+                        <TextView
+                            android:id="@+id/tv_Logistics_details_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/text_size_manager" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="快递电话："
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/text_size_manager" />
+
+                        <TextView
+                            android:id="@+id/tv_Logistics_details_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:text="12134557895"
+                            android:textColor="#089a5e"
+                            android:textSize="@dimen/text_size_manager" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/White"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_Logistics_details_head1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/touxiang_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:text="物流信息"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_logistic"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/White"
+                android:gravity="center"
+                android:text="暂无物流信息"
+                android:textColor="@color/Red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_logistics_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/White"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_logistics_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/logistics_green" />
+
+                    <ImageView
+                        android:id="@+id/image_logistics_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/logistics_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_logistic_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:text=""
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_logistic_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_manager" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/bg_white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.example.administrator.a3dmark.util.ListView_Demo
+                android:id="@+id/lv_Logistics_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:divider="@null"
+                android:focusable="false"
+                android:visibility="visible">
+
+            </com.example.administrator.a3dmark.util.ListView_Demo>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

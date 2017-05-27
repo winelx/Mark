@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary" />
+
+    <FrameLayout
+        android:id="@+id/fl_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_homepager"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_main_radio_home_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/btn_mark_left_item_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_mark"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_main_radio_mark_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/btn_mark_left_item_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_fitting_room"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_main_radio_fitting_room_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/btn_mark_left_item_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_shopping_card"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_main_radio_shoppingcard_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/btn_mark_left_item_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_main_radio_mine_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/btn_mark_left_item_selector" />
+    </RadioGroup>
+
+</LinearLayout>

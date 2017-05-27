@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/title_main" />
+
+    <LinearLayout
+        android:id="@+id/headphoto"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textColor="@color/text_black"
+            android:textSize="20sp" />
+
+        <com.liji.circleimageview.CircleImageView
+            android:id="@+id/image_mine_head"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/icon_error" />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/tv_person_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="22dp"
+        android:layout_weight="0.01"
+        android:background="@drawable/bg_white"
+        android:text="昵称"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <TextView
+
+        android:id="@+id/tv_person_signature"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white"
+        android:text="个性签名"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_person_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white"
+        android:text="二维码"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_person_sex"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white"
+        android:text="性别"
+        android:textColor="@color/text_black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_person_manager"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white"
+        android:text="人物管理"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_person_addr"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white"
+        android:text="收货地址"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+</LinearLayout>

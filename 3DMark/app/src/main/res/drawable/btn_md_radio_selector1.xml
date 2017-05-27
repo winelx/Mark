@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中-->
+    <item android:state_selected="true" android:drawable="@mipmap/fruit2" />
+    <!--点击状态中-->
+    <item android:state_focused="true" android:drawable="@mipmap/fruit2" />
+    <!--获取焦点-->
+    <item android:state_pressed="true" android:drawable="@mipmap/fruit2" />
+    <!--默认状态-->
+    <item android:drawable="@mipmap/fruit" />
+</selector><!--     <item android:drawable="@color/touming" /> default -->

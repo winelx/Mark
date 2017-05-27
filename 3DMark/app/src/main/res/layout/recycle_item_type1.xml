@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.recker.flybanner.FlyBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:focusable="true"
+            android:layout_marginTop="10dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@mipmap/search_box"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@mipmap/search"
+                    android:focusable="false"
+                    android:hint=" 搜索商品"
+                    android:paddingLeft="2dp"
+                    android:textColorHint="@color/Black"
+                    android:textSize="15sp"
+                    android:transitionName="mybtn" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/message" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

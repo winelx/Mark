@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_main" />
+
+    <RelativeLayout
+        android:id="@+id/isEntryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/isEntryImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shopping_card" />
+    <TextView
+        android:id="@+id/isEntryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没商品，去首页看看"
+        android:textColor="@color/Pink"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/isEntryImg"
+        android:src="@drawable/shopping_card" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title">
+        <ListView
+            android:id="@+id/list_shopping_card"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:divider="@color/bg_white"
+            android:dividerHeight="14.5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:id="@+id/llyout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/checkAll"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/check_un" />
+
+            <TextView
+                android:id="@id/checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="全选"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end">
+
+                <TextView
+                    android:id="@+id/tv_shopping_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/money_red"
+                    android:text="合计:"
+                    android:textColor="#999999"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_shopping_total"
+                    android:text="298"
+                    android:textColor="#ff0000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/total"
+                    android:layout_below="@id/tv_shopping_total"
+                    android:layout_marginTop="5dp"
+                    android:text="不含运费"
+                    android:textColor="#999999" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/settle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:text="结算（1）"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#66000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

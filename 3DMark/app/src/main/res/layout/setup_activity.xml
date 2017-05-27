@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_main" />
+
+    <TextView
+        android:id="@+id/tv_setup_cache"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="清理缓存"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_manager" />
+
+    <TextView
+        android:id="@+id/tv_setup_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="修改密码"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_manager" />
+
+    <TextView
+        android:id="@+id/tv_setup_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="用户协议"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_manager" />
+
+    <TextView
+        android:id="@+id/tv_setup_Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="意见反馈"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_manager" />
+
+    <TextView
+
+        android:id="@+id/tv_setup_Signout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="115dp"
+        android:background="@color/White"
+        android:gravity="center"
+        android:text="退出当前账号"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/title_size" />
+</LinearLayout>

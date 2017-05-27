@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_addr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="姓名"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_addr_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="电话号码"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="收货地址很挨个海岛和嘎的各位
+        哈刚打好点撒欢的共和啊哈撒谎的该撒娇和大哥噶巨额哈尔噶记得哈喝的逛街挖和我"
+        android:textColor="@color/Black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/tv_default_addr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/defalut_addr"
+            android:drawablePadding="8dp"
+            android:paddingLeft="5dp"
+            android:text="默认地址"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_edit_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@mipmap/edit_addr"
+            android:drawablePadding="5dp"
+            android:text="编辑"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_delete_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/delete_addr"
+            android:drawablePadding="5dp"
+            android:text="删除"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

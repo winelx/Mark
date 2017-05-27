@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head_recommend"
+            android:text="2222222"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_manager" />
+
+        <TextView
+            android:id="@+id/Thename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head_recommend"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="1111111"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_collection" />
+
+        <Button
+            android:id="@+id/golet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:background="@color/Pink"
+            android:gravity="center"
+            android:text="进入好店"
+            android:textColor="@color/White" />
+
+        <ImageView
+            android:id="@+id/image_head_recommend"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/follow" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/imgList"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image_recommend_big"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/headimage_1" />
+
+            <LinearLayout
+                android:id="@+id/recom_item"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_recommend_small_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginBottom="2dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/headimage_1" />
+
+                <ImageView
+                    android:id="@+id/image_recommend_small_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/headimage_1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="1111111"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/black_box"
+            android:gravity="center"
+            android:text="收 藏"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

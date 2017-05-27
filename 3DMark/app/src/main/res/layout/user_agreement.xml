@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_main" />
+
+    <EditText
+        android:id="@+id/edt_user_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/black_box"
+        android:gravity="top"
+        android:hint="意见反馈"
+        android:maxLength="120"
+        android:padding="10dp"
+        android:textColorHint="@color/text_black"
+        android:textSize="@dimen/text_size_manager" />
+
+    <TextView
+        android:id="@+id/tv_signature_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_girl"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/White"
+        android:textSize="@dimen/title" />
+</LinearLayout>

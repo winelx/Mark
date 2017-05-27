@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_recyc_type3_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_empty" />
+
+    <!--<View-->
+        <!--android:layout_width="1px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@android:color/darker_gray" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/item_recyc_type4_item_img"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/icon_empty" />-->
+
+    <!--<View-->
+        <!--android:layout_width="1px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@android:color/darker_gray" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/item_recyc_type5_item_img"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/icon_empty" />-->
+
+
+</android.support.v7.widget.CardView>

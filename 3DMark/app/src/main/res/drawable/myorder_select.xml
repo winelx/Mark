@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中-->
+    <item android:drawable="@mipmap/myorder_pinkline2" android:state_selected="true" />
+    <!--点击状态中-->
+    <item android:drawable="@mipmap/myorder_pinkline2" android:state_focused="true" />
+    <!--获取焦点-->
+    <item android:drawable="@mipmap/myorder_pinkline2" android:state_pressed="true" />
+    <!--默认状态-->
+    <item android:drawable="@android:color/transparent" />
+</selector>

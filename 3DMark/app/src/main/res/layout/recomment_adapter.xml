@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    android:background="@drawable/btn_return2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:id="@+id/cardView"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_shop_goods"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="￥125.00"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Red" />
+
+        <ImageView
+            android:id="@+id/image_shop_addshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/shopping_card_boutique_yellow"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_shop_goodsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="5dp"
+        android:text="哈哈的十大好的撒回家飒飒的武器级武器wire假的就撒娇是骄傲的撒旦撒的无一i"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_collection" />
+
+    <TextView
+        android:id="@+id/btn_shop_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_pale_pink"
+        android:text="立即试衣"
+        android:textColor="@color/White"
+        android:textSize="@dimen/text_size_collection"
+        android:visibility="gone" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

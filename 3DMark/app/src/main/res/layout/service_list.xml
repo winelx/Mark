@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="服务说明"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_manager" />
+
+        <ListView
+            android:id="@+id/lv_service"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/bg_white"
+            android:dividerHeight="1dp"></ListView>
+
+        <TextView
+            android:id="@+id/tv_service_finish"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/Pink"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/White"
+            android:textSize="@dimen/text_size_manager" />
+    </LinearLayout>
+</LinearLayout>
